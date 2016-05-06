@@ -1,11 +1,44 @@
-/*header{
+:root {
+    --primary-color: #7A9F35;
+}
+/*prev #C17979*/
+
+header{
     padding: 50px;
-    padding-left: 50px;
-    background-color: #7070BF;
+    padding-left: 0px;
+    background-color: var(--primary-color);
     margin-bottom: 20px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+body {
+    color: rgb(31, 37, 51);
 }
 
 .cont{
     padding-left: 50px;
 }
-*/
+
+#projects{
+    margin-left: 10px;
+}
+
+.project{
+    margin-bottom: 10px;
+}
+
+.project .name{
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+
+.project .description{
+    margin-left: 30px;
+    color: grey;
+    font-style: italic;
+}
