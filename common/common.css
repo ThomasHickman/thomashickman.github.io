@@ -9,7 +9,7 @@
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: translate(-5px, 0px);
+        transform: translate(-10px, 0px);
     }
     to {
         opacity: 1;
@@ -22,16 +22,22 @@
     animation-duration: 1s;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.domino-fade-in>*{
+    animation-play-state: paused;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    visibility: hidden;
 }
 
+.domino-fade-in>* *{
+    transform: inherit;
+}
+
+/*Generic rules*/
 body {
     color: rgb(31, 37, 51);
 }
 
-.cont{
-    padding-left: 50px;
+section>.content{
+    margin-left: 10px;
 }

@@ -11,6 +11,8 @@
 
     <script src="../lib/jquery-1.12.3.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+
     <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -18,53 +20,79 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="domino-fade-in">
     <header class="title" id="banner">
       <div class="container">
         <div class="col-md-9 vcenter">
           <h1>Thomas Hickman</h1>
           <h4>MMath Mathematics and Computer Science student at University of York</h4>
         </div>
-        <div class="col-md-3 vcenter fade-in" style="margin-top: 18px;/*HACK!*/">
+        <div class="col-md-3 icons domino-fade-in">
           <a href="https://github.com/ThomasHickman">
-            <img src="../img/GitHub-Mark-64px.png" />
+            <img alt="GitHub Icon" src="../img/GitHub-Mark-64px.png" />
+          </a>
+          <a href="https://www.linkedin.com/in/thomas-hickman-0924a210a">
+            <img alt="LinkedIn Icon" src="../img/In-Black-54px-R.png" />
           </a>
         </div>
       </div>
     </header>
-    <div class="container expand">
-      <h2>My Projects</h2>
-      <section id="projects">
-        <div class="project">
-          <div class="name">Tesslilate</div>
-          <div class="languages">
-            <div style="border-color: #8fb200;">GameMaker Language (GML)</div>
-            <div style="border-color: #3572A5">Python</div>
-          </div>
-          <div class="description">A fast-paced adrenaline-pumping arcade shooter for the Ludum Dare 35.</div>
-          <div class="links">
-            <a href="https://github.com/ThomasHickman/LudumDare35">source</a>
-            <a href="https://sharrackor.itch.io/tessellate">download</a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="top-line">
-            <div class="name">Classical Cipher</div>
+    <div class="container">
+      <section class="col-md-6">
+        <h2>My Projects</h2>
+        <div class="content domino-fade-in">
+          <div class="project">
+            <div class="name">Tesslilate</div>
             <div class="languages">
-              <div style="border-color: #f1e05a;">JavaScript</div>
-              <div style="border-color: #2b7489">TypeScript</div>
+              <div style="border-color: #8fb200;">GameMaker Language (GML)</div>
+              <div style="border-color: #3572A5">Python</div>
+            </div>
+            <div class="description">A fast-paced adrenaline-pumping arcade shooter for the Ludum Dare 35.</div>
+            <div class="links">
+              <a href="https://github.com/ThomasHickman/LudumDare35">source</a>
+              <a href="https://sharrackor.itch.io/tessellate">download</a>
             </div>
           </div>
-          <div class="description">Tools for decrypting, encrypting, and solving classical ciphers in JavaScript.</div>
-          <div class="links">
-            <a href="https://github.com/ThomasHickman/LudumDare35">source</a>
-            <a href="https://sharrackor.itch.io/tessellate">download</a>
+          <div class="project">
+            <div class="top-line">
+              <div class="name">Classical Cipher <small>(In development)</small></div>
+              <div class="languages">
+                <div style="border-color: #2b7489">TypeScript</div>
+              </div>
+            </div>
+            <div class="description">Tools for decrypting, encrypting, and solving classical ciphers in JavaScript.</div>
+            <div class="links">
+              <a href="https://github.com/ThomasHickman/classical-cipher">source</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="top-line">
+              <div class="name">Atom GML Projects</div>
+              <div class="languages">
+                <div style="border-color: #2b7489">TypeScript</div>
+                <div style="border-color: grey;">PEG.js</div>
+              </div>
+            </div>
+            <div class="description">Tools for developing code using the GameMaker language(GML) in atom.</div>
+            <div class="links">
+              <a href="https://github.com/ThomasHickman/autocomplete-gml">autocomplete-gml</a>
+              <a href="https://github.com/ThomasHickman/linter-gml">linter-gml</a>
+            </div>
           </div>
         </div>
       </section>
+      <section class="col-md-6">
+        <h2>Stuff I'm Interested in</h2>
+        <div class="content">
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Haskell</li>
+            <li>Game Development</li>
+          </ul>
+        </div>
+      </section>
     </div>
-
-    <script src="../lib/jquery-1.12.3.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

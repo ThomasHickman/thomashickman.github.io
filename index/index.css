@@ -1,12 +1,16 @@
 header{
     padding: 50px;
     padding-left: 0px;
-    background-color: var(--primary-color);
+    background-color: #7A9F35;
     margin-bottom: 20px;
 }
 
-#projects{
-    margin-left: 10px;
+header .icons{
+    margin-top: 18px;/*HACK!*/;
+}
+
+header .icons > *{
+    padding-right: 15px;
 }
 
 .project{
@@ -30,7 +34,7 @@ header{
     vertical-align: middle;
 }
 
-.project .languages div{
+.project .languages > *{
     display: inline-block;
     /* background-color: #D2EE9E; */
     padding: 1px;
@@ -40,7 +44,7 @@ header{
     margin-right: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    border-width: 4px;
+    border-width: 2px;
 }
 
 .project .description{
@@ -49,13 +53,13 @@ header{
     font-style: italic;
 }
 
-.project .links a{
+.project .links > *{
     padding-right: 5px;
     border-right-style: solid;
     border-right-color: #D4D4D4;
     border-right-width: 1px;
 }
 
-.project .links a:last-child{
+.project .links > *:last-child{
     border-right-style: none;
 }
