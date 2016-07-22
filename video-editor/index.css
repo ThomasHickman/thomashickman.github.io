@@ -1,0 +1,35 @@
+/**
+  * videoEditor/index.css
+  */
+
+header{
+    padding: 50px;
+    padding-left: 0px;
+    background-color: #7A9F35;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7a9f35+0,556d25+98 */
+    background: #7a9f35; /* Old browsers */
+    background: -moz-linear-gradient(-25deg, #7a9f35 0%, #556d25 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-25deg, #7a9f35 0%,#556d25 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(164deg, #7a9f35 0%,#556d25 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a9f35', endColorstr='#556d25',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin-bottom: 20px;
+}
+
+#video-drop-zone.hover {
+    border-color: hsla(240,45%,60%,1);
+    color: hsla(240,45%,60%,1);
+}
+
+#video-drop-zone {
+    border-radius: 5px;
+    margin: 30px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: hsla(80,45%,60%,1);
+    height: 280px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 47px;
+    color: hsl(80, 45%, 60%);
+    padding-top: 5px;
+}

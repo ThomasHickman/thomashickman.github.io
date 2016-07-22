@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript video editor</title>
+
+    <script src="../lib/jquery-1.12.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/dropzone.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="../common/common.css" rel="stylesheet">
+    <link href="../common/subpage.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="title" id="banner">
+      <div class="container">
+          <h1>Javascript video editor</h1>
+      </div>
+    </header>
+    <div class="container">
+      <!--
+      <div class="" id="video-drop-zone">
+          Drop files here ...
+      </div>-->
+      <h4 class="title">VID_20160626_205144323.mp4</h4>
+      <canvas id="preview"></canvas>
+      <video id="video-holder" style="display:none" controls></video>
+    </div>
+  </body>
+</html>
