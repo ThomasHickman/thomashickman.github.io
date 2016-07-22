@@ -3,6 +3,8 @@
 }
 /*prev #C17979*/
 
+/*http://paletton.com/#uid=12n0u0klllraIwbg4qKqBgcvXaQ*/
+
 
 /*Animations*/
 
@@ -36,6 +38,7 @@
 /*Generic rules*/
 body {
     color: rgb(31, 37, 51);
+    background-color: #DFEDC5;
 }
 
 section>.content{
