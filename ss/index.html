@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thomas Hickman - Home</title>
+
+    <link href="../common/common.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet">
+
+    <script src="../lib/jquery-1.12.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../index.js" defer></script>
+    <script type="text/javascript" src="./bundle.js"></script>
+
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="domino-fade-in">
+    <header class="title" id="banner">
+      <div class="container">
+        <div class="vcenter">
+          <h1>SelectorScript</h1>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+        <div id="editor1" style="width: 500px; min-height: 250px;display:inline-block"></div>
+        <button onclick="compileAndPrint()">Compile</button>
+        <textarea id="editor2" style="width: 500px;min-height: 250px;display:inline-block;border-style: solid;font-family: monospace;"></textarea>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor1 = ace.edit("editor1");
+        //editor1.setTheme("ace/theme/monokai");
+
+        function compileAndPrint(){
+            var code = editor1.getValue();
+            var newCode = compile(code);
+            var outputRegion = document.getElementById("editor2");
+
+            if(newCode.success){
+                outputRegion.innerText = newCode.output;
+            }
+            else{
+                outputRegion.innerText = "ERROR: " + newCode.error.message;
+            }
+        }
+    </script>
+  </body>
+</html>
