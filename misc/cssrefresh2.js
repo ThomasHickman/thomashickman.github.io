@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-Array.from(document.querySelectorAll("link[rel=stylesheet][autoreload]")).map(x => {
+Array.from(document.querySelectorAll("link[rel=stylesheet]")).map(x => {
     let lastModified = 0;
     async function poll(){
         let request = await fetch(`${x.href}?${Math.random()}`, {
