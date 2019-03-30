@@ -4,6 +4,8 @@
  *	Copyright (c) 2012 Fred Heusschen
  *	www.frebsite.nl
  *
+ *  Modified by Thomas Hickman 2019
+ *
  *	Dual licensed under the MIT and GPL licenses.
  *	http://en.wikipedia.org/wiki/MIT_License
  *	http://en.wikipedia.org/wiki/GNU_General_Public_License
